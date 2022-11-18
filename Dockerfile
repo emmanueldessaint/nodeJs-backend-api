@@ -5,9 +5,6 @@ RUN cd /tmp && \
 
 WORKDIR /tmp/backend
 
-RUN touch .env && \
-    echo "PASSWORD=Rumutcho270?" >> .env
-
 RUN cd /tmp/backend && \
     npm install && \
     npm install -g nodemon
